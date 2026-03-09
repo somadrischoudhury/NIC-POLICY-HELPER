@@ -1,0 +1,5 @@
+{
+  "name": "National Bot",
+  "description": "AI Voice Assistant for National Insurance Company Limited",
+  "requestFramePermissions": ["microphone"]
+}
