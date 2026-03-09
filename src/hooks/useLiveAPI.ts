@@ -82,7 +82,7 @@ export function useLiveAPI() {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       streamRef.current = stream;
 
-      const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+      const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
       const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
       playbackContextRef.current = new AudioContextClass({ sampleRate: 24000 });
